@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather Information</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-<body>
-    <p>Hello world</p>
+<body class="body">
+    <div id="weather-container">
+        <h1>Weather Information</h1>
+        
+        <!-- Form for City Input -->
+        <form id="weather-form">
+            <label for="city">Enter City:</label>
+            <input type="text" id="city" name="city" placeholder="E.g., New York" required>
+            <button type="button" onclick="getWeather()">Get Weather</button>
+        </form>
+        <div id="weather-info">
+        <h2>Temperature: <span id="temperature"></span></h2>
+        <h2>Weather State: <span id="weather-state"></span></h2>
+        <h2>Description: <span id="description"></span></h2>
+        </div>
+        <h3 id="error-message">weather data could not be fetched</h3>
+    </div>
+
+    <!-- JavaScript to fetch weather data -->
 </body>
 </html>
