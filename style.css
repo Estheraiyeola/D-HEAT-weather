@@ -34,10 +34,11 @@ input {
     margin-bottom: 10px;
     width: 100%;
     box-sizing: border-box;
+    background-color: transparent;
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #0f100f;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -47,4 +48,11 @@ button {
 
 button:hover {
     background-color: #45a049;
+}
+.body{
+    border-color: rgb(238, 166, 166);
+    background-color: bisque;
+    background-image: url("RS5Y.gif");
+    font-family: Arial, sans-serif;
+    text-align: center;
 }

@@ -6,7 +6,7 @@
   }
 
   function getLongAndLat(city){
-    const apiKey = 'f5121e51a28440ab9ff0a3149ea4e4af';
+    const apiKey = 'b0d7436a7faf498180a9625f064423c5';
     const apiUrl = `https://api.opencagedata.com/geocode/v1/json?q=${encodeURIComponent(city)}&key=${apiKey}`;
     fetch(apiUrl)
   .then(response => {
@@ -47,7 +47,7 @@
 
 
   function getWeatherForecast(latitude, longitude){
-    let key = '330f5b31969fc487b62328d94b5054b0';
+    let key = 'b1c0fa5aba024d04e167eb0e5966a7f1';
     let weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`
     fetch(weatherUrl).then(res => res.json()).then(dat =>{
         document.getElementById('temperature').textContent = `${dat.main.temp} K`;
